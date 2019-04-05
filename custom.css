@@ -7,9 +7,19 @@ body {
 .flex {
     display: flex;
     margin-left: 10vw;
+    margin-right: 10vw;
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+}
+
+.search {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 .title {
@@ -35,3 +45,4 @@ body {
     display: inline-block;
     transition: color .5s;
 }
+
