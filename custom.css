@@ -16,10 +16,12 @@ body {
 .search {
     width: 100%;
     display: block;
-    border: none;
     padding: 10px 10px 10px 10px;
     margin-bottom: 2em;
     border-radius: 5px;
+    background: #272822;
+    border: #a6e22e solid 1px;
+    color: #fff;
 }
 
 .title {
