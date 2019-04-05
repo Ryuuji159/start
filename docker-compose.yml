@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx: 
+    image: nginx:alpine
+    volumes:
+        - .:/usr/share/nginx/html/
+    ports:
+      - 8082:80
+      - 8083:443
+
