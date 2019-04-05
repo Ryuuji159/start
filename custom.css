@@ -1,0 +1,37 @@
+body {
+    background: #272822;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+}
+
+.flex {
+    display: flex;
+    margin-left: 10vw;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    color: #a6e22e;
+    display: inline-block;
+    text-align: right
+}
+
+.separator {
+    color: #f4bf75;
+    display: inline-block;
+}
+
+.item {
+    text-decoration: none;
+    color: #66d9ef;
+    display: inline-block;
+}
+
+.item:hover {
+    text-decoration: none;
+    color: #a1efe4;
+    display: inline-block;
+    transition: color .5s;
+}
