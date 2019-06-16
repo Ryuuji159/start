@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #282a36;
-    --fg-color: #e2e4e5;
-    --b1-color: #ff9f43;
-    --b2-color: #ff5c57;
-    --b3-color: #e2e4e5;
+    --bg-color: #212121;
+    --fg-color: #EEFFFF;
+    --b3-color: #89DDFF;
+    --b2-color: #FFCB6B;
+    --b1-color: #FF5370;
 }
 body {
     background: var(--bg-color);
