@@ -4,7 +4,7 @@
     --b3-color: #89DDFF;
     --b2-color: #FFCB6B;
     --b1-color: #FF5370;
-    --b0-color: #000000;
+    --b0-color: #FF5370;
 }
 body {
     background: var(--bg-color);
