@@ -1,100 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Start</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="custom.css">
-    </head>
-    <body>
-        <div class="flex">
-            <div>
-                <form action="https://www.google.com/search">
-                    <input type="text" class="search" placeholder="search" name="q" autocomplete="off" autofocus>
-                </form>
-            </div>
-            <div>
-                <span class="title">general</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://twitter.com/">twitter</a>
-                <a class="item" href="https://www.youtube.com/">youtube</a>
-                <a class="item" href="https://news.ycombinator.com">hacker_news</a>
-                <a class="item" href="https://lobste.rs/">lobsters</a>
-                <a class="item" href="https://dev.to">dev.to</a>
-            </div>
-            <div>
-                <span class="title">reddit</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://www.reddit.com/">just_reddit</a>
-                <a class="item" href="https://www.reddit.com/r/unixporn">/r/unixporn</a>
-                <a class="item" href="https://www.reddit.com/r/chile">/r/chile</a>
-                <a class="item" href="https://www.reddit.com/r/programming">/r/programming</a>
-                <a class="item" href="https://www.reddit.com/r/vim">/r/vim</a>
-                <a class="item" href="https://www.reddit.com/r/piracy">/r/piracy</a>
-            </div>
-            <div>
-                <span class="title">4chan</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://4chan.org/wg/catalog">/wg/</a>
-                <a class="item" href="https://4chan.org/g/catalog">/g/</a>
-                <a class="item" href="https://4chan.org/v/catalog">/v/</a>
-                <a class="item" href="https://4chan.org/x/catalog">/x/</a>
-            </div>
-            <div>
-                <span class="title">tools</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://regexr.com/">regexr</a>
-                <a class="item" href="https://github.com/">github</a>
-                <a class="item" href="https://sr.ht/">sourcehut</a>
-                <a class="item" href="https://cloud.digitalocean.com/">digitalocean</a>
-                <a class="item" href="https://trello.com/skrd159/boards">trello</a>
-                <a class="item" href="https://calendar.google.com/calendar/r">calendar</a>
-                <a class="item" href="https://translate.google.com">transtale</a>
-                <a class="item" href="https://unsplash.com/">unsplash</a>
-            </div>
-            <div>
-                <span class="title">blogs</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://drewdevault.com/">drew_devault</a>
-                <a class="item" href="https://lukesmith.xyz/">luke_smith</a>
-                <a class="item" href="https://bisqwit.iki.fi/">bisqwit</a>
-                <a class="item" href="https://hookrace.net/">hookrace</a>
-                <a class="item" href="https://jvns.ca/">julia_evans</a>
-                <a class="item" href="http://www.uf4no.com/articles">uf4no</a>
-                <a class="item" href="https://quanttype.net/">quanttype</a>
-                <a class="item" href="https://joecmarshall.com/">joem</a>
-                <a class="item" href="http://www.craigkerstiens.com/">craig</a>
-                <a class="item" href="https://www.nurkiewicz.com/">nurkiewicz</a>
-                <a class="item" href="https://castel.dev/">castel</a>
-                <a class="item" href="https://eev.ee/">eevee</a>
-                <a class="item" href="https://blog.codinghorror.com/">codinghorror</a>
-                <a class="item" href="https://blog.jessfraz.com/">jessie</a>
-                <a class="item" href="https://jrl.ninja">jrl</a>
-            </div>
-            <div>
-                <span class="title">down</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://rutracker.org/forum/index.php">rutracker</a>
-                <a class="item" href="http://rutor.info/">rutor</a>
-                <a class="item" href="https://1337x.to/">1337x.to</a>
-                <a class="item" href="https://thepiratebay.org/">thepiratebay</a>
-                <a class="item" href="https://modarchive.org/">modarchive</a>
-            </div>
-            <div>
-                <span class="title">inacap</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="http://portales.inacap.cl/">home</a>
-                <a class="item" href="https://www.inacap.cl/tportalvp/intranet-alumno">intranet</a>
-                <a class="item" href="https://lms.inacap.cl/my/">aprendizaje</a>
-            </div>
-            <div>
-                <span class="title">stardew_valley</span>
-                <span class="separator">&raquo;</span>
-                <a class="item" href="https://www.reddit.com/r/StardewValley/">/r/stardewvalley</a>
-                <a class="item" href="https://www.reddit.com/r/FarmsofStardewValley/">/r/FarmsofStardewValley</a>
-                <a class="item" href="https://www.reddit.com/r/StardewHomeDesign/">/r/StardewHomeDesign</a>
-                <a class="item" href="https://stardewvalleywiki.com/">wiki</a>
-            </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Start</title>
+    <style>
+:root {
+    --background: #141219;
+    --foreground: #83a7c8;
+    --cursor: #83a7c8;
+    --color0: #141219;
+    --color1: #cb0020;
+    --color2: #eb0021;
+    --color3: #ff201b;
+    --color4: #00a381;
+    --color5: #ff8c70;
+    --color6: #003b8c;
+    --color7: #83a7c8;
+    --color8: #5b748c;
+    --color9: #cb0020;
+    --color10: #eb0021;
+    --color11: #ff201b;
+    --color12: #00a381;
+    --color13: #ff8c70;
+    --color14: #003b8c;
+    --color15: #83a7c8;
+    --width: 70ch;
+}
+
+* {
+  font-family: "Work Sans";
+  font-size: 20px;
+}
+
+::selection {
+  color: var(--background);
+  background: var(--foreground);
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 10ch auto;
+  grid-template-rows: auto auto auto auto;
+  max-width: var(--width);
+  width: 100%;
+}
+
+.items > div {
+  margin-bottom: 1ch;
+}
+
+.search {
+  max-width: var(--width);
+  width: 100%;
+  margin-bottom: 1ch;
+}
+
+.search > input{
+  width: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  border: solid 2px var(--color1);
+  padding: 1ch;
+}
+
+.title {
+  font-weight: 700;
+  width: 8ch;
+}
+
+.link {
+  margin-right: 1ch;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+.link a:hover {
+  font-weight: 700;
+}
+
+link a:visited {
+  color: var(--foreground);
+}
+
+.c1 { color: var(--color1) }
+.c2 { color: var(--color2) }
+.c3 { color: var(--color3) }
+.c4 { color: var(--color4) }
+.c5 { color: var(--color5) }
+.c6 { color: var(--color6) }
+.c7 { color: var(--color7) }
+.c8 { color: var(--color8) }
+.c9 { color: var(--color9) }
+    </style>
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='search'>
+        <input type='search' name='q' autocomplete='off' autofocus>
+      </div>
+      <div class='items'>
+        <span class='title'>General</span>
+        <div>
+          <span class='link c1'>[<a href="https://tweetdeck.twitter.com">twitter</a>]</span>
+          <span class='link c1'>[<a href="https://www.youtube.com">youtube</a>]</span>
+          <span class='link c1'>[<a href="https://news.ycombinator.com">hacker_news</a>]</span>
+          <span class='link c1'>[<a href="https://lobste.rs">lobsters</a>]</span>
+          <span class='link c1'>[<a href="https://web.whatsapp.com">whatsapp</a>]</span>
         </div>
-    </body>
+
+        <span class='title'>Inacap</span>
+        <div>
+          <span class='link c1'>[<a href="https://www.inacap.cl">home</a>]</span>
+          <span class='link c1'>[<a href="https://adfs.inacap.cl/adfs/ls/?wtrealm=https://siga.inacap.cl/sts/&wa=wsignin1.0&wreply=https://siga.inacap.cl/sts/&wctx=https%3a%2f%2fadfs.inacap.cl%2fadfs%2fls%2f%3fwreply%3dhttps%3a%2f%2fwww.inacap.cl%2ftportalvp%2fintranet-alumno%26wtrealm%3dhttps%3a%2f%2fwww.inacap.cl%2f">intranet</a>]</span>
+          <span class='link c1'>[<a href="https://www.inacap.cl/tportalvp/procesar_link.php?url=https://lms.inacap.cl/auth/saml2/login.php?wants=https://lms.inacap.cl/my/">aprendizaje</a>]</span>
+          <span class='link c1'>[<a href="https://docs.google.com">docs</a>]</span>
+        </div>
+
+        <span class='title'>Reddit</span>
+        <div>
+          <span class='link c1'>[<a href="https://www.reddit.com">frontpage</a>]</span>
+          <span class='link c1'>[<a href="https://www.reddit.com/r/unixporn">/r/unixporn</a>]</span>
+          <span class='link c1'>[<a href="https://www.reddit.com/r/piracy">/r/piracy</a>]</span>
+          <span class='link c1'>[<a href="https://www.reddit.com/r/roms">/r/roms</a>]</span>
+          <span class='link c1'>[<a href="https://www.reddit.com/r/chile">/r/chile</a>]</span>
+        </div>
+
+        <span class='title'>4chan</span>
+        <div>
+          <span class='link c1'>[<a href="https://4chan.org/g/catalog">/g/</a>]</span>
+          <span class='link c1'>[<a href="https://4chan.org/wg/catalog">/wg/</a>]</span>
+          <span class='link c1'>[<a href="https://4chan.org/v/catalog">/v/</a>]</span>
+          <span class='link c1'>[<a href="https://4chan.org/x/catalog">/x/</a>]</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.onkeydown = function(e) {
+        q = document.getElementsByName('q')[0].value;
+        if(q.length === 0){
+          return;
+        }
+
+        if(e.key === 'Enter'){
+          if(e.ctrlKey) { 
+            window.location.href = 'https://' + q;
+          } else if(q[0] === '!'){
+            switch(q.slice(1)) {
+              case 't': window.location.href = 'https://www.twitter.com'; break;
+              case 'w': window.location.href = 'https://www.wikipedia.com'; break;
+              case 'y': window.location.href = 'https://www.youtube.com'; break;
+              case 'r': window.location.href = 'https://www.reddit.com'; break;
+              default : window.location.href = 'https://www.duckduckgo.com/?q=' + encodeURIComponent(q); break;
+            }
+          } else {
+             window.location.href = 'https://www.duckduckgo.com/?q=' + encodeURIComponent(q);
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
