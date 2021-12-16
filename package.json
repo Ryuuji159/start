@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:tailwind": "cross-env NODE_ENV=production npx postcss public/tailwind.css -o public/index.css",
-    "watch:tailwind": "npx postcss public/tailwind.css -o public/index.css -w",
+    "build:tailwind": "cross-env NODE_ENV=production npx postcss src/tailwind.css -o public/build/index.css",
+    "watch:tailwind": "npx postcss src/tailwind.css -o public/build/index.css -w",
     "build:svelte": "rollup -c",
     "watch:svelte": "rollup -c -w",
 

@@ -5,7 +5,7 @@
 <a
   href="{link.href}"
   referrerpolicy="no-referrer"
-  class="cursor-pointer hover:underline"
+  class="cursor-pointer hover:underline tracking-wide"
 >
   [{link.name}]
 </a>
