@@ -32,7 +32,8 @@
 <input
   type="search"
   autocomplete="false"
+  autofocus
+  class="border-2 border-black py-2 px-2"
   bind:value={search}
   on:keyup|preventDefault={submit}
-  class="border-2 border-black py-2 px-2"
 />
