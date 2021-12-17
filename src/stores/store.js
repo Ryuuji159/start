@@ -15,8 +15,14 @@ const defaultGroups = [
     name: 'Inacap',
     links: [
       {name: 'home', href: 'https://www.inacap.cl/'},
-      {name: 'intranet', href: 'https://adfs.inacap.cl/adfs/ls/?wtrealm=https://siga.inacap.cl/sts/&wa=wsignin1.0&wreply=https://siga.inacap.cl/sts/&wctx=https%3a%2f%2fadfs.inacap.cl%2fadfs%2fls%2f%3fwreply%3dhttps%3a%2f%2fwww.inacap.cl%2ftportalvp%2fintranet-alumno%26wtrealm%3dhttps%3a%2f%2fwww.inacap.cl%2f'},
-      {name: 'aprendizaje', href: 'https://www.inacap.cl/tportalvp/procesar_link.php?url=https://lms.inacap.cl/auth/saml2/login.php?wants=https://lms.inacap.cl/my/'},
+      {
+        name: 'intranet',
+        href: 'https://adfs.inacap.cl/adfs/ls/?wtrealm=https://siga.inacap.cl/sts/&wa=wsignin1.0&wreply=https://siga.inacap.cl/sts/&wctx=https%3a%2f%2fadfs.inacap.cl%2fadfs%2fls%2f%3fwreply%3dhttps%3a%2f%2fwww.inacap.cl%2ftportalvp%2fintranet-alumno%26wtrealm%3dhttps%3a%2f%2fwww.inacap.cl%2f'
+      },
+      {
+        name: 'aprendizaje',
+        href: 'https://www.inacap.cl/tportalvp/procesar_link.php?url=https://lms.inacap.cl/auth/saml2/login.php?wants=https://lms.inacap.cl/my/'
+      },
     ]
   },
   {
@@ -40,4 +46,19 @@ const defaultGroups = [
   },
 ]
 
-export const groups = readable(defaultGroups, () => {}, ()=>{})
+export const groups = readable(
+  [],
+  (set) => {
+    const groups = localStorage.getItem('start-groups');
+
+    if(groups){
+      console.log('Cargando desde localStorage')
+      set(JSON.parse(groups));
+    } else{
+      localStorage.setItem('start-groups', JSON.stringify(defaultGroups))
+      set(defaultGroups);
+    }
+
+    return () => {}
+  },
+)
