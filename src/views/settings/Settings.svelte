@@ -4,8 +4,12 @@
 
   let visible = false;
 
-  function onClick() {
+  function toggleVisible() {
     visible = !visible;
+  }
+
+  function hide() {
+    visible = false;
   }
 
 </script>
@@ -15,7 +19,7 @@
   transition-colors hover:text-gray-700
   ${visible ? 'text-gray-700' : 'text-gray-300'}
   cursor-pointer `}
-  on:click={onClick}
+  on:click={toggleVisible}
 />
 
 {#if visible}

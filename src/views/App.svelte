@@ -3,8 +3,8 @@
   import LinkGroup from "./LinkGroup.svelte";
   import Container from "./Container.svelte";
 
-  import {groups} from "./store";
-  import Settings from "./Settings/Settings.svelte";
+  import {groups} from "../stores/store";
+  import Settings from "./settings/Settings.svelte";
 </script>
 
 <Container>
