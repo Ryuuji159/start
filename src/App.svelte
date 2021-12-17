@@ -4,9 +4,11 @@
   import Container from "./Container.svelte";
 
   import {groups} from "./store";
+  import Settings from "./Settings/Settings.svelte";
 </script>
 
 <Container>
+  <Settings slot="settings"/>
   <Search slot="search"/>
 
   <svelte:fragment slot="groups">
