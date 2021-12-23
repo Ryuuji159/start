@@ -38,6 +38,13 @@ const defaultGroups = [
       {name: '/x/', href: 'https://4chan.org/x/catalog'},
     ]
   },
+  {
+    name: 'Home',
+    links: [
+      {name: 'status', href: 'http://192.168.1.200:19999'},
+      {name: 'torrent', href: 'http://192.168.1.200:8080'},
+    ]
+  },
 ]
 
 export const groups = readable(defaultGroups, () => {}, ()=>{})
